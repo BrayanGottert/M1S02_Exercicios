@@ -9,8 +9,8 @@ var qtd1 = 0,
 
 while (fecharPedido == false) {
   produto = window.prompt(
-    "Digite o número conforme o produto que deseja comprar 1-5, ou 6 para fechar seu pedido:" +
-      "<br> <ul> <li>(1) Hortifruti <li>(2) Laticínios <li>(3) Carnes <li>(4) Peixes <li>(5) Aves <li>(6) Fechar pedido </ul>"
+    "Digite o número conforme o produto que deseja comprar '1' - '5',\n ou digite '6' para fechar seu pedido:" +
+      "\n\u2022 (1) Hortifruti \n\u2022 (2) Laticínios \n\u2022 (3) Carnes \n\u2022 (4) Peixes \n\u2022 (5) Aves \n\u2022 (6) Fechar pedido"
   );
   // document.write(produto + "<br>"); *linha de teste
 
@@ -43,7 +43,7 @@ while (fecharPedido == false) {
       fecharPedido = true;
       break;
     default:
-        window.prompt("Produto não listado, escolha novamente");
+        alert("Produto não listado, escolha novamente");
         break;
 
   }
